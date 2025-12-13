@@ -13,3 +13,4 @@
 При push до origin проєкт потрапляє до CI\CD(GitHub Actions), після чого контейнер збирається та потрапляє до Container Registry(GitHub Container Registry). Після deployment'у контейнери з registry витягуються до pod'ів.
 
 
+
