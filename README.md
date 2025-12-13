@@ -156,7 +156,7 @@ You should see the homepage of your website.
 
 For Delivery we choose GHCR method
 
-[Container link](https://github.com/users/futokutei/packages/container/package/defense-industry-website)
+[Container link](https://github.com/users/rxniray/packages/container/package/defense-industry-website)
 
 ---
 
@@ -165,12 +165,12 @@ For Delivery we choose GHCR method
 Use this link to install image from comand line:
 
 ```
-docker pull ghcr.io/futokutei/defense-industry-website:latest
+docker pull ghcr.io/rxniray/defense-industry-website:latest
 ```
 
 OR use this line to use it like basic image in Dockerfile:
 ``` 
-FROM ghcr.io/futokutei/defense-industry-website:latest
+FROM ghcr.io/rxniray/defense-industry-website:latest
 ```
 
 ---
@@ -347,7 +347,7 @@ python app.py
 
 Для Delivery було обрано варіант через GHCR
 
-[Посилання на зібраний контейнер](https://github.com/users/futokutei/packages/container/package/defense-industry-website)
+[Посилання на зібраний контейнер](https://github.com/users/rxniray/packages/container/package/defense-industry-website)
 
 ---
 
@@ -356,12 +356,12 @@ python app.py
 Використовуйте це, щоб встановити образ через командний рядок:
 
 ```
-docker pull ghcr.io/futokutei/defense-industry-website:latest
+docker pull ghcr.io/rxniray/defense-industry-website:latest
 ```
 
 ЧИ використовуйте це, щоб використовувати образ, як базовий:
 ``` 
-FROM ghcr.io/futokutei/defense-industry-website:latest
+FROM ghcr.io/rxniray/defense-industry-website:latest
 ```
 
 ## Ліцензія
