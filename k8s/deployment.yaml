@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prod-nexus-api
+  namespace: prod-nexus
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: prod-nexus-api
+  template:
+    metadata:
+      labels:
+        app: prod-nexus-api
+    spec:
+      containers:
+        - name: prod-nexus-api
+          image: prod-nexus:1.0.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 5000
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 5000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /products
+              port: 5000
+            initialDelaySeconds: 3
+            periodSeconds: 5
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
