@@ -75,7 +75,7 @@ jobs:
         tags: |
           type=ref,event=branch
           type=ref,event=pr
-          type=sha,prefix={{branch}}-
+          type=sha,prefix={{branch}}
           type=semver,pattern={{version}}
           type=semver,pattern={{major}}.{{minor}}
           type=raw,value=latest,enable={{is_default_branch}}
@@ -92,4 +92,5 @@ jobs:
         
     - name: Image digest
       run: echo ${{ steps.meta.outputs.digest }}
+
   
